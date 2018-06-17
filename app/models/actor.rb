@@ -7,6 +7,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    Character.find_by(self.id)
+    Character.all.find_by(self.id)
   end
 end
