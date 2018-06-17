@@ -10,6 +10,6 @@ class Actor < ActiveRecord::Base
     arr = self.characters.each do |character|
       character
     end
-    arr
+    puts arr
   end
 end
