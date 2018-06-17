@@ -7,6 +7,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    puts "#{self.characters}"
+    puts "my characters are #{self.characters}"
   end
 end
