@@ -7,9 +7,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    arr = self.characters.each do |character|
-      character
-    end
-    puts arr
+    Character.find_by(self.id)
   end
 end
